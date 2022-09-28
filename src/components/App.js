@@ -1,7 +1,7 @@
-import logo from "./img/logo.png"
+import logo from "../img/logo.png"
 import styled from "styled-components"
 import FlashCards from "./Flashcards"
-import GlobalStyle from "./img/GlobalStyle"
+import GlobalStyle from "../img/GlobalStyle"
 import Footer from "./Footer"
 
 
