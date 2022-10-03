@@ -1,21 +1,24 @@
 import logo from "../img/logo.png";
 import styled from "styled-components";
+import { useState } from "react";
 import FlashCards from "./Flashcards";
 import GlobalStyle from "../GlobalStyle";
+import Footer from "./Footer";
 
 
 export default function App() {
-  
+  const [icone, setIcone] = useState([]);  
 
 
   return (
     <Body>
       <GlobalStyle />
       <ContainerLogo>
-        <img src={logo} />
+        <img alt="logo" src={logo} />
         <h1>ZapRecall</h1>
       </ContainerLogo>
-      <FlashCards/>
+      <FlashCards icone={icone} setIcone={setIcone}/>
+      <Footer icone={icone} />
     </Body>
   );
 }
