@@ -90,7 +90,7 @@ export default function FlashCards() {
                     <button onClick={() => trocarCor3(index)}>Zap!</button>
                   </div>
                 </Respostas>
-               : <p><strong>Pergunta</strong> {index + 1}</p> : <p><strong>Pergunta</strong> {index + 1}</p> }
+               : icone.length === perguntasRespostas.length ? <p>Pergunta {index + 1}</p> : <p>{p.pergunta}</p> : <p>Pergunta {index + 1}</p>  }
             {flashCardClicado.includes(index) ? (
               mostrarResposta ? (
                 ""
