@@ -52,7 +52,6 @@ export default function FlashCards({icone, setIcone}) {
   }
 
   return (
-    <>
       <ContainerPerguntas>
         {perguntasRespostas.map((p, index) => (
           <Perguntas
@@ -128,7 +127,6 @@ export default function FlashCards({icone, setIcone}) {
         ))}
       </ContainerPerguntas>
       
-    </>
   );
 }
 
